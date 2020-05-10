@@ -162,7 +162,7 @@ class MGSolBase
       std::string eqname_in  // equation name
   );
   //-------------------------------------------------------------------------
-  ~MGSolBase();  ///< Destructor (level structure)
+  virtual ~MGSolBase();  ///< Destructor (level structure)
   void clear();  ///< Substructure destructor
   //-------------------------------------------------------------------------
   /// Distributing dof function (virtual MGSolDA)
