@@ -36,7 +36,6 @@ class MGSolNS_coup : public MGSolNS {
       std::string eqname_in = "NS0",        ///< base name system
       std::string varname_in = "u"          ///< base name variable
   );
-  ~MGSolNS_coup();  ///< Destructor
 
   void SetVariableNames(std::string varname_in);
   void get_el_field_data(int iel, int Level, int el_conn[], int offset, int el_dof[], int ndof_lev);
