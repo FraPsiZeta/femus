@@ -44,7 +44,7 @@ void MGSolNS::CalcTimeDer(double& TimeDer, TIME_DER_TYPE Type, int SpaceDir, int
   TimeDer = 0.;
 
   if (Type == ACTUAL_STEP) {
-    const int TD_coeff = (_NS_parameter._TimeDisc == 2) ? 1.5 : 1.;
+    const float TD_coeff = (_NS_parameter._TimeDisc == 2) ? 1.5 : 1.;
 
     if (_NS_parameter._SolveSteady == 0)
       TimeDer = TD_coeff * (_phi_g[2][nPhi] + _Phi_supg) * _phi_g[2][interpNodeID] / _dt;
